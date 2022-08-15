@@ -7,10 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Baper Bank Create</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<h1>Welcome To My Bank</h1>
 
 <body>
+
+    <header>
+        <h1 class="text-5xl text-center mt-5">Welcome To <spnan class="text-orange-300">My Bank!!!!</spnan>
+        </h1>
+    </header>
+    <main>
+        <section class="bg-purple-200 w-9/12 mx-auto mt-12 p-8">
+            <h1 class="text-3xl">Login Area</h1>
+            <div>
+                <input class="w-9/12 block mb-5 mt-5" type="email" placeholder="Enter Your Email">
+                <input class="w-9/12 block mb-5 mt-5" type="password" placeholder="Enter your Password">
+                <button
+                    class="bg-orange-400 px-8 py-2 text-white font-semibold hover:bg-violet-700 rounded">Submit</button>
+            </div>
+        </section>
+
+    </main>
 
 
     <script src="script.js"></script>
